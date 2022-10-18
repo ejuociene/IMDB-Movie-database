@@ -34,21 +34,21 @@ const Footer = () => {
       </div>
       <div className="footer-details">
         <div className="social">
-          <Link to={`https://www.facebook.com/imdb`}>
+          <a href="https://www.facebook.com/imdb" target="_blank">
             <img src={facebookImg} alt="facebook" className="social-icon" />
-          </Link>
-          <Link to={`https://www.instagram.com/imdb/`}>
+          </a>
+          <a href="https://www.instagram.com/imdb/" target="_blank">
             <img src={instagramImg} alt="instagram" className="social-icon" />
-          </Link>
-          <Link to={`https://www.twitch.tv/IMDb`}>
+          </a>
+          <a href="https://www.twitch.tv/IMDb" target="_blank">
             <img src={twitchImg} alt="twitch" className="social-icon" />
-          </Link>
-          <Link to={`https://twitter.com/imdb`}>
+          </a>
+          <a href="https://twitter.com/imdb" target="_blank">
             <img src={twitterImg} alt="twitter" className="social-icon" />
-          </Link>
-          <Link to={`https://www.youtube.com/imdb`}>
+          </a>
+          <a href="https://www.youtube.com/imdb" target="_blank">
             <img src={youtubeImg} alt="youtube" className="social-icon" />
-          </Link>
+          </a>
         </div>
         <p className="small-text">© Eglė Juočienė 2022</p>
       </div>
