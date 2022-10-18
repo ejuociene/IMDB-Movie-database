@@ -32,7 +32,7 @@ const Search = () => {
         console.log(error);
         setAlert("Oops, there seems to be a mistake. Please refresh the page.");
       });
-  }, [currentPage, id]);
+  }, [currentPage, id, setAlert]);
   return (
     <div className="container">
       <ScrollToTop/>

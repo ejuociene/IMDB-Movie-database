@@ -27,10 +27,10 @@ const Header = () => {
           <Link to={"/"}>
             <img src={logo} alt="logo" className="logo" />
           </Link>
-          <div className="menu-container">
+          {/* <div className="menu-container">
             <img src={menuIcon} alt="menu" className="menu" />
             <div className="menu-text">Menu</div>
-          </div>
+          </div> */}
         </div>
         <form className="desktop-search" onSubmit={(e) => handleSearch(e)}>
           <input
