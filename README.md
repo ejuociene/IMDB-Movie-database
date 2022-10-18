@@ -13,5 +13,5 @@ Movie search website with features:
 - Semantic HTML5 markup
 - Flexbox
 
-Check it out: https://imdb-movie-site-api.netlify.app/
+Check it out: https://imdb-database.netlify.app/
 
