@@ -6,6 +6,7 @@ import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import Home from "./pages/Home/Home";
 import Search from "./pages/Search/Search";
+import SearchEmpty from "./pages/Search/SearchEmpty"
 import Title from "./pages/Title/Title";
 import Watchlist from "./pages/Watchlist/Watchlist";
 import Alert from "./components/Alert/Alert";
@@ -37,8 +38,10 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />}></Route>
             <Route path="/search/:id/" element={<Search />}></Route>
+            <Route path="/search/" element={<SearchEmpty />}></Route>
             <Route path="/title/:id/" element={<Title />}></Route>
             <Route path="/watchlist/" element={<Watchlist />}></Route>
+            <Route path="*" element={<Home />}></Route>
           </Routes>
         </main>
         <Footer />

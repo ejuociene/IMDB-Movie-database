@@ -1,16 +1,17 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect,useContext } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
 import "./Search.css";
 import Card from "../../components/Card/Card";
 import ScrollToTop from "../../components/ScrollToTop/ScrollToTop"
+import MainContext from "../../context/MainContext";
 
 const Search = () => {
+  const {setAlert} = useContext(MainContext)
   const [results, setResults] = useState([]);
   const [totalPages, setTotalPages] = useState(0);
   const [currentPage, setCurrentPage] = useState(1);
   const moviesPerPage = 10;
-  const [alert, setAlert] = useState("");
   const { id } = useParams();
   const handlePrevPage = () => {
     currentPage !== 1 && setCurrentPage((prevPage) => prevPage - 1);
@@ -36,13 +37,12 @@ const Search = () => {
     <div className="container">
       <ScrollToTop/>
       <h2 className="container-heading">Search: "{id}"</h2>
-      {alert && <div>{alert}</div>}
       <div className="search-container">
-        {results &&
+        {results ?
           results.map((title) => {
             console.log(title);
             return <Card title={title} key={title.imdbID} details={true} />;
-          })}
+          }) : <div>There seems to be no titles for this keyword. Please try another keyword.</div>}
       </div>
       {totalPages > 1 && (
         <div className="pagination">
