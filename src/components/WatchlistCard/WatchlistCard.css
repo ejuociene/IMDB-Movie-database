@@ -1,0 +1,54 @@
+.watchlist-card {
+  display: flex;
+  padding-bottom: 1em;
+  background-color: rgb(var(--c-black-lighter));
+  position: relative;
+  gap: 1em;
+  height: 200px;
+}
+
+.watchlist-card-poster {
+  height: 200px;
+  object-fit: cover;
+  transition: opacity .15s ease-in-out
+}
+
+.watchlist-card-poster:hover {
+  opacity: .9;
+}
+
+.watchlist-card-info {
+  padding: 0.5em 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  width: 60%;
+  overflow: hidden;
+}
+
+.watchlist-card-title {
+  font-size: 1.3rem;
+}
+
+.flex-start {
+  display: flex;
+  align-items: center;
+  gap: 0.3em;
+}
+
+.watchlist-card-plot {
+  font-size: 0.9rem;
+}
+
+@media only screen and (min-width: 600px) {
+}
+
+@media only screen and (min-width: 1024px) {
+  .watchlist-card-plot {
+    font-size: 1rem;
+    margin-top: 1em;
+  }
+  .watchlist-card-info {
+    width: 80%;
+  }
+}

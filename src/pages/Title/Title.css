@@ -1,0 +1,168 @@
+.title-heading-top {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.title-heading h3 {
+  margin: 0.5em 0 0.2em 0;
+}
+
+.title-heading-left-data {
+  color: rgb(var(--c-grey));
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 0.7em;
+  padding-bottom: 0.5em;
+}
+
+.dot-break {
+  height: 0.2em;
+  width: 0.2em;
+  background-color: rgb(var(--c-grey));
+  border-radius: 50%;
+}
+
+.rating-text {
+  display: none;
+  color: rgb(var(--c-grey));
+  font-weight: 600;
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+}
+
+.rating-box {
+  display: flex;
+  align-items: center;
+  color: rgb(var(--c-grey));
+  gap: 0.3em;
+  font-weight: 500;
+}
+
+.rating {
+  color: rgb(var(--c-white));
+  font-weight: 800;
+}
+
+.title-media {
+  margin: 1em 0;
+}
+
+.title-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.title-info-details {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.title-genres {
+  display: flex;
+  gap: 0.5em;
+  font-size: 0.9rem;
+}
+
+.title-genres span {
+  border: 1px solid rgb(var(--c-black-lightest));
+  padding: 0.3em 0.8em;
+  border-radius: 1em;
+}
+
+.title-plot {
+  line-height: 1.5rem;
+}
+
+.break-line {
+  width: 100%;
+  border-bottom: 1px solid rgb(var(--c-black-lightest));
+}
+
+.title-crew {
+  display: flex;
+  gap: 1em;
+}
+
+.title-crew p {
+  font-weight: 800;
+}
+
+.title-crew span {
+  color: rgb(var(--c-blue));
+}
+
+.title-awards {
+  border: 1px solid rgb(var(--c-gold));
+  display: flex;
+  gap: 2em;
+  align-items: center;
+  border-radius: 0.3em;
+  font-weight: 500;
+}
+
+.title-awards-block {
+  width: 2em;
+  border-radius: 0.2em;
+  padding: 1.5em 0.5em;
+  background-color: rgb(var(--c-gold));
+  position: relative;
+}
+
+.title-awards-block::after {
+  content: "";
+  background: inherit;
+  height: 100%;
+  left: calc(100% - 0.85rem);
+  top: 0;
+  position: absolute;
+  width: 1.7rem;
+  transform: skewX(-20deg);
+}
+
+.title-watchlist-btn {
+  width: 100%;
+  margin: 1em 0;
+  padding: 1em;
+  text-align: left;
+  color: rgb(var(--c-white));
+  font-weight: 500;
+  font-family: inherit;
+  font-size: 1rem;
+  border-radius: 0.5em;
+  background-color: rgb(var(--c-black-lighterII));
+  cursor: pointer;
+  transition: background-color .2s ease-in-out;
+}
+
+.title-watchlist-btn:hover {
+  background-color: rgb(var(--c-black-lightest));
+}
+
+@media only screen and (min-width: 1024px) {
+  .title-heading {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+  .rating-box {
+    margin-top: 0.2em;
+  }
+  .rating-text {
+    display: inline-block;
+  }
+  .rating {
+    font-size: 1.4rem;
+  }
+  .title-info {
+    flex-direction: row;
+    gap: 3em;
+    justify-content: space-between;
+  }
+  .title-watchlist-btn {
+    width: 30em;
+    height: 3.5em;
+  }
+}

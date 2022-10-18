@@ -1,0 +1,29 @@
+.footer-recent-container {
+  margin-top: 1em;
+  display: flex;
+  gap: 4.5%;
+  width: auto;
+  transition: transform 0.3s;
+}
+
+.footer-recent p {
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.empty {
+  margin-top: 1em;
+}
+
+@media only screen and (min-width: 600px) {
+  .footer-recent-container {
+    gap: 3.5%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .footer-recent-container {
+    gap: 2%;
+  }
+}

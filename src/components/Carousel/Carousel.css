@@ -1,0 +1,36 @@
+.carousel {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.inner {
+  display: flex;
+  gap: 4.5%;
+  width: auto;
+  transition: transform 0.3s;
+}
+
+.btn-back {
+  background-image: url("../../images/back.svg");
+  top: calc(26em - 50%);
+  left: 0;
+}
+
+.btn-next {
+  background-image: url("../../images/forward.svg");
+  top: calc(26em - 50%);
+  right: 0;
+}
+
+@media only screen and (min-width: 600px) {
+  .inner {
+    gap: 3.5%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .inner {
+    gap: 2%;
+  }
+}

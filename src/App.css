@@ -1,0 +1,86 @@
+:root {
+  --c-black: 0, 0, 0;
+  --c-black-footer: 15, 15, 15;
+  --c-black-lighter: 25, 25, 25;
+  --c-black-lighterII: 45, 45, 45;
+  --c-black-lighterIII: 55, 55, 55;
+  --c-black-lightest: 80, 80, 80;
+  --c-white: 255, 255, 255;
+  --c-grey: var(--c-white), 0.7;
+  --c-gold: 245, 197, 24;
+  --c-blue: 87, 153, 239;
+  --svg-grey: invert(62%) sepia(2%) saturate(50%) hue-rotate(328deg)
+    brightness(98%) contrast(82%);
+  --svg-white: invert(93%) sepia(17%) saturate(0%) hue-rotate(229deg)
+    brightness(118%) contrast(100%);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App {
+  background-color: rgb(var(--c-black));
+  min-height: 100vh;
+  color: rgb(var(--c-white));
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1050px;
+  width: 90%;
+  padding: 1em 0 5em 0;
+}
+
+/* ********** */
+/* TYPOGRAPHY */
+/* ********** */
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: rgb(var(--c-gold));
+}
+
+h2 {
+  color: rgb(var(--c-white));
+}
+
+h3 {
+  font-weight: 400;
+  font-size: 2rem;
+  color: rgb(var(--c-white));
+}
+
+h4 {
+  color: rgb(var(--c-gold));
+  font-size: 1.3rem;
+}
+
+h5 {
+  font-weight: 400;
+  color: rgb(var(--c-white));
+  font-size: 1rem;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cblue {
+  color: rgb(var(--c-blue));
+}

@@ -1,0 +1,38 @@
+footer {
+  background-color: rgb(var(--c-black-footer));
+  color: white;
+  padding: 1em 0 2em 0;
+}
+
+.carousel-from-ID {
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel-from-ID h2 {
+  padding-inline: 0;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  margin-bottom: 1em;
+}
+
+.social-icon {
+  padding: 1em;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color .15s ease-in-out
+}
+
+.social-icon:hover {
+  background-color: rgb(var(--c-black-lighterII));
+}
+
+.small-text {
+  color: rgb(var(--c-grey));
+  font-size: 0.8rem;
+  text-align: center;
+}

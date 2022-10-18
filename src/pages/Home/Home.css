@@ -1,0 +1,53 @@
+.what-to-watch {
+  margin-top: 4em;
+}
+
+.home-section {
+    margin-top: 2em;
+}
+
+.home-subheading {
+  display: flex;
+  align-items: center;
+  margin: 1.5em 0 0 0;
+}
+
+.home-subheading img {
+  height: 3em;
+}
+
+.what-to-watch p {
+  color: rgb(var(--c-grey));
+}
+
+.forward {
+    cursor: pointer;
+}
+
+.home-subheading h2 {
+    transition: color .15s ease-in-out
+}
+
+.home-subheading:hover h2 {
+    color: rgb(var(--c-gold));
+    cursor: pointer;
+}
+
+.subheading-border {
+  margin-right: 0.5em;
+  height: 1.8em;
+  width: 0.3em;
+  background-color: rgb(var(--c-gold));
+  border-radius: 1em;
+}
+
+.top-picks-container {
+  margin-top: 1em;
+}
+
+.top-picks-inner {
+  display: flex;
+  gap: 2em;
+  overflow: hidden;
+  width: 100%;
+}

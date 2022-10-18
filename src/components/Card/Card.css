@@ -1,0 +1,93 @@
+.card {
+  min-width: 46%;
+  padding-bottom: 1em;
+  background-color: rgb(var(--c-black-lighter));
+  position: relative;
+}
+
+.card-poster {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  transition: opacity .15s;
+}
+
+.card-poster:hover {
+  opacity: 0.9;
+}
+
+.card-addToWatchlist {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.bookmark_img {
+  opacity: 0.8;
+  background-size: 90%;
+  height: 3em;
+  width: 2.4em;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: flex-start;
+  padding: 0.4em 0 0 0.355em;
+  cursor: pointer;
+  transition: opacity .2s ease-in-out
+}
+
+.bookmark_img:hover {
+  opacity: 1;
+}
+
+.card-title,
+.card-info {
+  padding-inline: 0.8em;
+}
+
+.card-title {
+  height: 2.3em;
+  margin-top: .5em;
+}
+
+.card-info {
+  color: rgb(var(--c-grey));
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.card-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4em;
+  margin: 1.5em auto 0 auto;
+  width: 90%;
+  padding: 0.8em 1.6em;
+  border-radius: 0.3em;
+  background-color: rgb(var(--c-black-lighterIII));
+  border: none;
+  color: rgb(var(--c-blue));
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color .15s ease-in-out
+}
+
+.card-btn:hover {
+  background-color: rgba(var(--c-black-lightest));
+}
+
+@media only screen and (min-width: 600px) {
+  .card {
+    min-width: 30%;
+    max-width: 30%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .card {
+    min-width: 18%;
+    max-width: 18%;
+  }
+}

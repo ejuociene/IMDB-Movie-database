@@ -1,0 +1,10 @@
+.subheading {
+  padding-inline: 1em;
+}
+.watchlist-card-container {
+  margin-top: 2em;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 2em;
+}
