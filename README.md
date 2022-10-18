@@ -1,4 +1,4 @@
-# IMDB inspired Movie Database
+# IMDb inspired Movie Database
 
 Movie search website with features: 
 - Search movies and TV Shows
