@@ -5,6 +5,7 @@ import ScrollToTop from "../../components/ScrollToTop/ScrollToTop";
 import MainContext from "../../context/MainContext";
 import "./Title.css";
 import starIcon from "../../images/star.svg";
+import noImg from "../../images/no-img.png"
 
 const Title = () => {
   const { id } = useParams();
@@ -78,7 +79,7 @@ const Title = () => {
         </div>
       </div>
       <div className="title-media">
-        <img src={title.Poster} alt={title.Title} className="title-poster" />
+      <img  src={title.Poster === "N/A" ? noImg : title.Poster} alt={title.Title} className="title-poster" />
       </div>
       <div className="title-info">
         <div className="title-info-details">
