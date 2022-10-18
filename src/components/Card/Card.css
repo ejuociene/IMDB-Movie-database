@@ -1,5 +1,6 @@
 .card {
   min-width: 46%;
+  max-width: 46%;
   padding-bottom: 1em;
   background-color: rgb(var(--c-black-lighter));
   position: relative;
