@@ -185,6 +185,7 @@ nav {
   .logo-container {
     flex-direction: row;
     gap: 1em;
+    padding: 0;
   }
   .menu {
     padding: 0;
