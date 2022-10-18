@@ -7,7 +7,7 @@
 
 .card-poster {
   width: 100%;
-  height: 280px;
+  height: 220px;
   object-fit: cover;
   transition: opacity .15s;
 }
@@ -77,6 +77,12 @@
 
 .card-btn:hover {
   background-color: rgba(var(--c-black-lightest));
+}
+
+@media only screen and (min-width: 435px) {
+  .card-poster {
+    height: 280px;
+  }
 }
 
 @media only screen and (min-width: 600px) {
