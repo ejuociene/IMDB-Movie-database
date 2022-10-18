@@ -34,19 +34,19 @@ const Footer = () => {
       </div>
       <div className="footer-details">
         <div className="social">
-          <a href="https://www.facebook.com/imdb" target="_blank">
+          <a href="https://www.facebook.com/imdb" target="_blank" without rel="noreferrer">
             <img src={facebookImg} alt="facebook" className="social-icon" />
           </a>
-          <a href="https://www.instagram.com/imdb/" target="_blank">
+          <a href="https://www.instagram.com/imdb/" target="_blank" without rel="noreferrer">
             <img src={instagramImg} alt="instagram" className="social-icon" />
           </a>
-          <a href="https://www.twitch.tv/IMDb" target="_blank">
+          <a href="https://www.twitch.tv/IMDb" target="_blank" without rel="noreferrer">
             <img src={twitchImg} alt="twitch" className="social-icon" />
           </a>
-          <a href="https://twitter.com/imdb" target="_blank">
+          <a href="https://twitter.com/imdb" target="_blank" without rel="noreferrer">
             <img src={twitterImg} alt="twitter" className="social-icon" />
           </a>
-          <a href="https://www.youtube.com/imdb" target="_blank">
+          <a href="https://www.youtube.com/imdb" target="_blank" without rel="noreferrer">
             <img src={youtubeImg} alt="youtube" className="social-icon" />
           </a>
         </div>
