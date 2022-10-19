@@ -13,6 +13,17 @@ footer {
   padding-inline: 0;
 }
 
+.carousel-from-ID p {
+ cursor: pointer;
+ padding: .5em 1em;
+ border-radius: 1em;
+}
+
+.carousel-from-ID p:hover {
+  background-color: rgb(var(--c-black-lighterII));
+}
+
+
 .social {
   display: flex;
   justify-content: center;
